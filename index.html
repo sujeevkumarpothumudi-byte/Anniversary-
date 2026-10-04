@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Happy Anniversary, My Love ❤️</title>
+<meta name="theme-color" content="#8b1e3f">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:Georgia,"Times New Roman",serif;
+  color:#fff;background:#16050b;overflow-x:hidden
+}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:28px 18px;position:relative;text-align:center;
+  background:radial-gradient(circle at top,#6e1d39 0,#260a16 48%,#100309 100%);
+}
+.hero:before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(120deg,rgba(255,155,190,.13),transparent 45%,rgba(255,220,150,.08));
+}
+.card{position:relative;z-index:2;max-width:900px;width:100%}
+.small{letter-spacing:4px;text-transform:uppercase;font-size:12px;opacity:.82}
+h1{font-size:clamp(42px,10vw,86px);margin:12px 0 4px;line-height:.95}
+.subtitle{font-size:clamp(18px,4vw,28px);font-style:italic;opacity:.94}
+.date{display:inline-block;margin:18px 0;padding:9px 20px;border:1px solid rgba(255,255,255,.4);border-radius:30px}
+.photo{
+  width:min(720px,100%);margin:24px auto 0;border-radius:22px;overflow:hidden;
+  box-shadow:0 20px 70px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.18)
+}
+.photo img{display:block;width:100%;height:auto}
+.section{padding:70px 18px;background:#fff8fa;color:#3a111d;text-align:center}
+.section.dark{background:#210813;color:#fff}
+.wrap{max-width:900px;margin:auto}
+h2{font-size:clamp(30px,7vw,50px);margin:0 0 25px}
+.message{
+  font-size:clamp(18px,3.8vw,23px);line-height:1.8;margin:auto;
+  max-width:760px
+}
+.highlight{color:#a51f4d;font-weight:bold}
+.memories{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:900px;margin:35px auto}
+.memories img{width:100%;height:100%;object-fit:cover;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.promise{
+  margin:30px auto 0;padding:28px;border-radius:22px;
+  background:linear-gradient(135deg,#6d1737,#a42a55);max-width:760px;
+  box-shadow:0 18px 45px rgba(0,0,0,.28)
+}
+footer{padding:45px 18px;text-align:center;background:#0d0207}
+.heart{position:fixed;bottom:-30px;font-size:20px;opacity:.75;animation:float 7s linear infinite;z-index:10;pointer-events:none}
+@keyframes float{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.75}100%{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+@media(max-width:650px){.memories{grid-template-columns:1fr}.memories img{max-height:520px}}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="card">
+    <div class="small">A little surprise from</div>
+    <h1>Sujeev ❤️</h1>
+    <div class="subtitle">to my love, my favorite person</div>
+    <div class="date">05 • 10 • 2024</div>
+    <div class="photo"><img src="images/memory1.png" alt="Our beautiful memory"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Happy Anniversary, My Love ❤️</h2>
+    <p class="message">
+      From <span class="highlight">05/10/2024</span>, something beautiful changed in my life.
+      You slowly became one of my favorite people, one of my safest places, and one of the
+      most precious parts of my world.
+      <br><br>
+      I don't know if words can ever explain everything I feel for you. You are not just
+      someone I love — <span class="highlight">you are someone I deeply value, care for, and
+      never want to lose.</span>
+      Every smile, every conversation, every little memory with you has a special place in my heart.
+      <br><br>
+      There were happy moments, emotional moments, misunderstandings and difficult days too.
+      But through all of them, my feelings for you became even more meaningful. Thank you for
+      being part of my life, for giving me beautiful memories, and for being the person who
+      makes ordinary days feel special.
+      <br><br>
+      If I could choose again, I would still choose you. I want to keep growing with you,
+      laughing with you, supporting you, and making many more memories together.
+    </p>
+  </div>
+</section>
+
+<section class="section dark">
+  <div class="wrap">
+    <h2>Our Little Memories ✨</h2>
+    <div class="memories">
+      <img src="images/memory1.png" alt="Memory one">
+      <img src="images/memory2.png" alt="Memory two">
+    </div>
+    <div class="promise">
+      <h2 style="font-size:34px;margin-bottom:12px">A Promise From Me ❤️</h2>
+      <p class="message" style="font-size:19px">
+        I may not always be perfect, but my love, care and respect for you are real.
+        I will always cherish what we have and keep trying to make you smile.
+        <br><br>
+        <strong>Happy Anniversary, my love.</strong><br>
+        Thank you for being one of the most beautiful chapters of my life.
+        <br><br>
+        With all my heart,<br>
+        <strong>Yours, Sujeev ❤️</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div style="font-size:28px">❤️</div>
+  <p>Made with love for my favorite person.</p>
+  <p style="opacity:.65;font-size:13px">05/10/2024 — always a special date.</p>
+</footer>
+
+<script>
+const hearts=["❤️","💗","💕","✨"];
+for(let i=0;i<18;i++){
+  const s=document.createElement("span");
+  s.className="heart";
+  s.textContent=hearts[Math.floor(Math.random()*hearts.length)];
+  s.style.left=Math.random()*100+"vw";
+  s.style.animationDelay=(Math.random()*7)+"s";
+  s.style.animationDuration=(5+Math.random()*5)+"s";
+  document.body.appendChild(s);
+}
+</script>
+</body>
+</html>
